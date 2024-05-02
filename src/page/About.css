@@ -1,0 +1,43 @@
+.About{
+    /* background-color: rgb(186, 172, 153); */
+    height: 120vh;
+    
+}
+
+.about-title{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.about-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img-container{
+    width: 60%;
+    height: 60%;
+    /* border: 3px solid black; */
+}
+
+.about1>p{
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+/* .about-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 50vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    overflow-x: auto;  
+} */
+
+

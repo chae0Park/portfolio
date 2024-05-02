@@ -1,0 +1,38 @@
+
+ .AboutCard{
+    /* background-color: tomato; */
+    height: 50vh;
+    width: 20vw;
+    
+}
+
+.about{
+    /* background-color: rgb(238, 211, 175);  */
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.about3{
+    width: 90%;
+    height: 85%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px; 
+}
+
+.about-img-frame{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.About_logo{
+ border: 1px solid #000000;
+ height: 40%;
+}
+
+.About_description{
+    border: 1px solid black;
+    height: 60%;
+}

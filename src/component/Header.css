@@ -1,0 +1,32 @@
+ul{
+    margin: 0; /*ul의 margin과 padding이 생략되면 화면 상단부에 흰 줄 생김*/
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  li{
+    margin: 10px;
+  }
+  
+  .logo{
+    justify-content: center;
+    border: 1px solid black;
+    align-content: center;
+    margin-left:10px;
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+  }
+  
+  .nav-home-container{
+   /* background-color: #EBECED; */
+   display: flex;
+   justify-content: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   border-bottom: 1px solid black;
+  
+  }

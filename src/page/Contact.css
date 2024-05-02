@@ -1,0 +1,27 @@
+.Contact{
+    height: 100vh;
+    background-color: tomato;
+  }
+  .contact-item{
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-title{
+    padding: 20px;
+  }
+  
+  .contact-container{
+    display:flex;
+    justify-content: center; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .email, .phone, .github{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    
+  }

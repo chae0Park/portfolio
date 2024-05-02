@@ -1,0 +1,5 @@
+/* src/global.css
+will import global.css in index.js file */ 
+html {
+    scroll-behavior: smooth;
+  }
