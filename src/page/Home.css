@@ -22,6 +22,9 @@
     left: 80px; top: 120px;
     text-align: left;
   }
+
+  
+
   
   /*img cotainer div*/
   .Home_img{
@@ -41,3 +44,4 @@
     height: 100%;
     object-fit: cover;
   }
+
