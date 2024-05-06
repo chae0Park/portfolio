@@ -17,9 +17,10 @@
 }
 
 .about-img-container{
-    width: 60%;
+    width: 80%;
     height: 60%;
     /* border: 3px solid black; */
+    padding-left: 17px;
 }
 
 .about1>p{

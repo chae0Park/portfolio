@@ -2,7 +2,7 @@
  .AboutCard{
     /* background-color: tomato; */
     height: 50vh;
-    width: 20vw;
+    width: 25vw;
     
 }
 
@@ -29,10 +29,12 @@
 
 .About_logo{
  border: 1px solid #000000;
- height: 40%;
+ height: 30%;
 }
 
 .About_description{
     border: 1px solid black;
-    height: 60%;
+    height: 70%;
+    text-align: left;
+    padding-left: 10px;
 }
