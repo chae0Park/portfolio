@@ -9,6 +9,7 @@ const Contact = () => {
                     <div class="contact-item phone">4</div>
                     <div class="contact-item github">5</div>
                 </div>
+                <p>references: </p>
          </div>
     )
 }

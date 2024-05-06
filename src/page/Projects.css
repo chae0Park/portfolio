@@ -1,6 +1,7 @@
 .container{
-  /* background-color: beige; */
-  height: 120vh;
+  background-color: beige;
+  height: 130vh;
+  padding-bottom: 20%;
 }
 
 .item{
@@ -10,10 +11,10 @@
 .Projects-title{
   /* background-color: #FFD151; */
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   }
 
-.Projects-main{
+.Projects-filter{
   /* background-color: #FFEAAF; */
   padding:20px;
   display: flex;
@@ -25,8 +26,9 @@
 .projectbtn1, .projectbtn2{
   /* background-color:#FFE190; */
   border-bottom: 1px solid black;
-  width:7vw;
-  margin: 5px;
+  width:6vw;
+  margin: 7px;
+  padding-bottom: 7px;
 }
 
 .grid-content{
@@ -44,7 +46,7 @@
   padding:30px;
   display: grid;
   grid-template-columns: repeat(3,30%);
-  grid-template-rows: repeat(2,90%);
+  grid-template-rows: repeat(2,120%);
   grid-gap: 25px;
 }
 
@@ -56,10 +58,33 @@
   margin: 0 auto; */
 }
 
+/* .item6{
+  display: block;
+  justify-content: center; 
+  align-items: center; 
+} */
+
+.item6-img{
+  width: 99%;
+  height: 67%;
+  border: 2px solid black;
+}
+
+.item6-desc{
+  width: 96%;
+  height: 28%;
+  border: 2px solid black;
+  padding: 5px;
+  text-align: left;
+}
+
+
 /*actual img*/
 .pj-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
 

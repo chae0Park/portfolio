@@ -1,0 +1,28 @@
+/*photo frame*/
+.item6{
+    border: 1px solid black;
+    /* overflow: hidden;
+    margin: 0 auto; */
+  }
+/*actual img*/
+.pj-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  .item6-img{
+    width: 99%;
+    height: 67%;
+    border: 2px solid black;
+  }
+  
+  .item6-desc{
+    width: 96%;
+    height: 28%;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  
+ 

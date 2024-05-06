@@ -1,0 +1,13 @@
+.techstack_container{
+    display: flex;
+    justify-self: flex-start;
+  }
+  
+  .techstack_btn{
+    /* width: 50px;
+    height: 20px; */
+    border: 1px solid blue;
+    padding:5px;
+    font-size: 15px;
+    margin-left: 2px;
+  }

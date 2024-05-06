@@ -1,15 +1,18 @@
 import "./AboutCard.css"
 // import About5 from "../asset/about5.jpg"
 
-const AboutCard = ({title, description}) => {
+const AboutCard = (props) => {
     return(
         <div className="AboutCard">
-                <div className="about about3">
-                    {/* <img 로고부분 /> */}
-                    <div className="About_logo">로고</div>
+                <div className="about about3">                   
+                    <div className="About_logo">
+                        <div className="logo_img">
+                            <img className="about-img-frame" src={props.img} alt={props.title} />
+                        </div>
+                        <h4 className="about_logo_title">{props.title}</h4>
+                    </div>
                     <div className="About_description">
-                        <h3>{title}</h3>
-                        <p>{description}</p>
+                        <p>{props.description}</p>
                     </div>
                 </div>
         </div>            

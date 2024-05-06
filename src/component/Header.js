@@ -5,10 +5,10 @@ const Header = () => {
         <div className="Header">
             <div className="nav-home-container">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home"><h4>Home</h4></a></li>
+                    <li><a href="#about"><h4>About</h4></a></li>
+                    <li><a href="#projects"><h4>Projects</h4></a></li>
+                    <li><a href="#contact"><h4>Contact</h4></a></li>
                 </ul>
                 <div className="logo">로고</div>
             </div>
