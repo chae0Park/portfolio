@@ -1,11 +1,10 @@
 .Contact{
     height: 40vh;
-    background-color: tomato;
+    
   }
   .contact-item{
-    border: 1px solid white;
     text-align: center;
-    color: white;
+    color: black;
   }
   
   .contact-title{
@@ -23,5 +22,6 @@
     width: 100px;
     height: 100px;
     margin-left: 20px;
+    border: 1px solid black;
     
   }
