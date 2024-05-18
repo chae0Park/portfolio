@@ -31,6 +31,30 @@
   padding-bottom: 7px;
 }
 
+.projectbtn1,
+.projectbtn2,
+.projectbtn3{
+  background-color: #f0f0f0;
+  border:none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.projectbtn1:hover,
+.projectbtn2:hover,
+.projectbtn3:hover{
+  background-color: #e0e0e0;
+}
+
+.projectbtn1:focus,
+.projectbtn2:focus,
+.projectbtn3:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .grid-content{
   /* background-color: tomato; */
   height: 80vh;

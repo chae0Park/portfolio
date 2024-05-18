@@ -5,7 +5,7 @@ import {useTypingText} from '../component/utils.js';
 
 
 const Home = () => {
-   const {word} = useTypingText(["Web","React FE", "Java BE"],130,20,);
+   const {word} = useTypingText(["Web","React FE", "Java BE"],130,10,);
 
     return(
         <div className="Home">
@@ -13,7 +13,7 @@ const Home = () => {
             <div className="item item2">
                 <div className="Home_introduction">
                 
-                    <h2>Hello! I'm Chaeyoung, a dedicated {word} developer</h2>
+                    <h2>Hello! I'm Chaeyoung, a dedicated {word} developer.</h2>
                     with a strong foundation in modern HTML/CSS and JavaScript, 
                     honed through self-study and an intensive full stack development bootcamp. 
                     I excel in creating responsive and efficient web applications, 

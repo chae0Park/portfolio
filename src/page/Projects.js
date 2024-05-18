@@ -1,57 +1,71 @@
 import "./Projects.css"
+import { useState } from "react"
 import ProjectCard from "../component/ProjectCard"
 
+//simplified project list 
+const projectList = [
+  { id: 1, category: "webMobile", name: "Web/Mobile Project 1"},
+  { id: 2, category: "webMobile", name: "Web/Mobile Project 2" },
+  { id: 3, category: "toyProjects", name: "Toy Project 1" },
+  { id: 4, category: "toyProjects", name: "Toy Project 2" },
+  { id: 5, category: "webMobile", name: "Web/Mobile Project 3" },
+  { id: 6, category: "toyProjects", name: "Toy Project 3" },
+]
 
+const Projects = () => {
+const [tab, setTab] = useState("");
 
-const About = () => {
+//어떤 필터로 설정되었는지 확인이 필요함 
+const onChangeFilter = (category) => {
+    setTab(category);
+};
+
+const filteredProjects = tab
+  ? projectList.filter((project) => project.category === tab)
+  : projectList; //show all projects if no tab is selected
+
+// 
+
     return(
         <div className="Projects">
             <div class="container">
                 <div class="item Projects-title"><h1>projects</h1></div>
                 
                 <div class="item Projects-filter">
-                    <div class="item projectbtn1">web/mobile</div>
-                    <div class="item projectbtn2">toy projects</div>
+                    <button class="item projectbtn1"
+                      onClick={() => onChangeFilter("webMobile")}
+                      >
+                      web/mobile
+                    </button>
+                    <button class="item projectbtn2"
+                      onClick={() => onChangeFilter("toyProjects")}
+                        >
+                        toy projects
+                    </button>
+                    <button className="item projectbtn3"
+                      onClick={() => onChangeFilter("")}
+                    >
+                      show all 
+                    </button>
                 </div>
 
                 <div className="grid-content"> 
                     <div class="item item5">
-
-                        {/* <div class="item item6">
-                            <div class="item6-img">img</div>
-                            <div class="item6-desc">
-                                description: making what site that does this thing.<br></br>
-                                <div className="techstack_container">
-                                    tech stack:  
-                                    <p className="techstack_btn"/>
-                                    <p className="techstack_btn"/>
-                                    <p className="techstack_btn"/>
-                                    <p className="techstack_btn"/>
-                                </div>                       
-                            </div>
-                        </div> */}
-                        <ProjectCard 
-                            // img={firstimg}
-                            desc={"This app is made to operate whatever function."}
-                        />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        {/* <div class="item item7"></div>
-                        <div class="item item8">  </div>
-                        <div class="item item9"></div>
-                        <div class="item item10"></div>
-                        <div class="item item11"></div> */}
+                        {filteredProjects.map((project) => (
+                          <ProjectCard key={project.id} project={project} />
+                        ))}
+                        {/* <ProjectCard key={toyProjects}/>
+                        <ProjectCard key={webMobile}/>
+                        <ProjectCard key={webMobile}/>
+                        <ProjectCard key={webMobile}/>
+                        <ProjectCard key={toyProjects}/>
+                        <ProjectCard key={toyProjects}/> */}
                     </div>
                 </div>
-                
-                
-
-                </div>
+              </div>
         </div>
-    )
-}
+    );
+};
+export default Projects;
 
-export default About;
+
