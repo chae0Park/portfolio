@@ -47,12 +47,15 @@ const About = () => {
             <div className="about-slider">
                 <div className="about-img-container" onWheel={handleWheel}>
                     <Slider ref={sliderRef} {...settings}>
-                        <AboutCard {...ABOUT_IMG[0]}/>
+                        {ABOUT_IMG.map((about) => (
+                            <AboutCard {...about}/>
+                        ))}
+                        {/* <AboutCard {...ABOUT_IMG[0]}/>
                         <AboutCard {...ABOUT_IMG[1]}/>
                         <AboutCard {...ABOUT_IMG[2]}/>
                         <AboutCard {...ABOUT_IMG[3]}/>
                         <AboutCard {...ABOUT_IMG[4]}/>
-                        <AboutCard {...ABOUT_IMG[5]}/>
+                        <AboutCard {...ABOUT_IMG[5]}/> */}
                         
                     </Slider>
                 </div>

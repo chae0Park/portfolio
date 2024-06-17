@@ -1,16 +1,17 @@
 import "./Projects.css"
 import { useState } from "react"
 import ProjectCard from "../component/ProjectCard"
+import { PROJECT_LSIT } from "../data.js";
 
 //simplified project list 
-const projectList = [
-  { id: 1, category: "webMobile", name: "Web/Mobile Project 1"},
-  { id: 2, category: "webMobile", name: "Web/Mobile Project 2" },
-  { id: 3, category: "toyProjects", name: "Toy Project 1" },
-  { id: 4, category: "toyProjects", name: "Toy Project 2" },
-  { id: 5, category: "webMobile", name: "Web/Mobile Project 3" },
-  { id: 6, category: "toyProjects", name: "Toy Project 3" },
-]
+// const projectList = [
+//   { id: 1, category: "webMobile", name: "Web/Mobile Project 1"},
+//   { id: 2, category: "webMobile", name: "Web/Mobile Project 2" },
+//   { id: 3, category: "toyProjects", name: "Toy Project 1" },
+//   { id: 4, category: "toyProjects", name: "Toy Project 2" },
+//   { id: 5, category: "webMobile", name: "Web/Mobile Project 3" },
+//   { id: 6, category: "toyProjects", name: "Toy Project 3" },
+// ]
 
 const Projects = () => {
 const [tab, setTab] = useState("");
@@ -21,8 +22,8 @@ const onChangeFilter = (category) => {
 };
 
 const filteredProjects = tab
-  ? projectList.filter((project) => project.category === tab)
-  : projectList; //show all projects if no tab is selected
+  ? PROJECT_LSIT.filter((project) => project.category === tab)
+  : PROJECT_LSIT; //show all projects if no tab is selected
 
 // 
 
@@ -52,14 +53,8 @@ const filteredProjects = tab
                 <div className="grid-content"> 
                     <div class="item item5">
                         {filteredProjects.map((project) => (
-                          <ProjectCard key={project.id} project={project} />
+                          <ProjectCard {...PROJECT_LSIT} />
                         ))}
-                        {/* <ProjectCard key={toyProjects}/>
-                        <ProjectCard key={webMobile}/>
-                        <ProjectCard key={webMobile}/>
-                        <ProjectCard key={webMobile}/>
-                        <ProjectCard key={toyProjects}/>
-                        <ProjectCard key={toyProjects}/> */}
                     </div>
                 </div>
               </div>
